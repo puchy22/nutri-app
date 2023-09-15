@@ -14,3 +14,7 @@ mi vida para mantenerme saludable.
 
 ![Comprobación clave equipo local](./doc/comprobacion_clave_equipo_local.png)
 
+## Configuración del usuario y el mail en el equipo local
+
+![Usuario y mail github](./doc/user_mail_git.png)
+
