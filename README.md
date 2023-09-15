@@ -18,3 +18,7 @@ mi vida para mantenerme saludable.
 
 ![Usuario y mail github](./doc/user_mail_git.png)
 
+## Perfil de GitHub reconocible
+
+![Perfil GitHub](./doc/perfil_github.png)
+
