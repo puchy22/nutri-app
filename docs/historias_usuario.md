@@ -14,8 +14,7 @@ corporal; o en épocas donde tengo menos tiempo por exámenes y no puedo ir tant
 las calorías estándar para una persona de mi edad y peso ya que no estoy progresando en el entrenamiento.
 
 Todo esto me requiere tener un control sobre mis compras semanales para el cual no tengo mucho tiempo debido a los estudios.
-Ojalá de manera automática me calculase cual es el próximo día que debería ir a comprar y optimizase al máximo las cantidades
-de cada alimento en mi próxima compra recomendandome la opción de eliminar o añadir ciertos alimentos (siempre necesitando de
-mi aprobación, obviamente); todo esto basandose en la anterior compra para que la injesta de macro-nutrientes se acercase al
-máximo lo que en teoría tendría que consumir de media según el objetivo marcado.
+Ojalá de manera automática me optimizase al máximo las cantidades de cada alimento en mi próxima compra recomendandome la opción
+de eliminar o añadir ciertos alimentos (siempre necesitando de mi aprobación, obviamente); todo esto basandose en la anterior
+compra para que la injesta de macro-nutrientes se acercase al máximo lo que en teoría tendría que consumir de media según el objetivo marcado.
 
