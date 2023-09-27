@@ -21,10 +21,10 @@ entregará el código fuente de este módulo y será viable si pasa los tests.
 
 ## [M3] Optimización de la recomendación de alimentos basada en los alimentos ya comprados
 
-El objetivo de este milestone es implementar un módulo que resuelva el problema de optimizar la agregación de alimentos en función de
-de una suma inicial de los distintos macronutrientes, así como las características físicas del usuario (edad, peso y estatura) y su
-actividad física media. Esta nueva recomendación de alimentos debe maximizar que la nueva suma de macronutrientes promedio se aproxime
-lo más posible a los promedios teóricos de macronutrientes del usuario y minimice el número de días necesarios para su consumo.
+El objetivo de este milestone es resolver el problema de optimizar la agregación de alimentos en función de de una suma inicial
+de los distintos macronutrientes, así como las características físicas del usuario (edad, peso y estatura) y su actividad física
+media. Esta nueva recomendación de alimentos debe maximizar que la nueva suma de macronutrientes promedio se aproxime lo más posible
+a los promedios teóricos de macronutrientes del usuario y minimice el número de días necesarios para su consumo.
 
 En este se entregará el código fuente del módulo y será viable si se pasan los tests.
 
