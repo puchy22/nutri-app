@@ -1,29 +1,29 @@
 export class Producto{
-    private nombre: string;
-    private carbohidratos: number;
-    private proteinas: number;
-    private grasas: number;
+    private _nombre: string;
+    private _carbohidratos: number;
+    private _proteinas: number;
+    private _grasas: number;
 
     constructor(nombre: string, carbohidratos: number, proteinas:number, grasas: number){
-        this.nombre = nombre;
-        this.carbohidratos = carbohidratos;
-        this.proteinas = proteinas;
-        this.grasas = grasas;
+        this._nombre = nombre;
+        this._carbohidratos = carbohidratos;
+        this._proteinas = proteinas;
+        this._grasas = grasas;
     }
 
-    getNombre(): string{
-        return this.nombre;
+    get nombre(): string{
+        return this._nombre;
     }
 
-    getCarbohidratos(): number{
-        return this.carbohidratos;
+    get carbohidratos(): number{
+        return this._carbohidratos;
     }
 
-    getProteinas(): number{
-        return this.proteinas;
+    get proteinas(): number{
+        return this._proteinas;
     }
 
-    getGrasas(): number{
-        return this.grasas;
+    get grasas(): number{
+        return this._grasas;
     }
 }
