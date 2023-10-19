@@ -1,35 +1,37 @@
 import { Producto } from "./producto";
 
-export class Ticket{
+export class Compra{
+    private _fechaCompra: Date;
     private _compra: [Producto,number][];
 
-    constructor(){
+    constructor(fecha: Date){
         this._compra = [];
+        this._fechaCompra = fecha
     }
 
     get compra(): [Producto,number][]{
         return this._compra;
     }
 
-    //Método para incluir un producto junto con su cantidad en el vector compra
+    get fechaCompra(): Date{
+        return this._fechaCompra;
+    }
+
     agregarProducto(producto: Producto,cantidad: number): void{
        //Incluir código
     }
 
 
-    //Método para obtener la cantidad total de Proteinas
     cantidadTotalProteinas(): number{
         //Incluir código
         return 0;
     }
 
-    //Método para obtener la cantidad total de Carbohidratos
     cantidadTotalCarbohidratos(): number{
         //Incluir código        
         return 0;
     }
 
-    //Método para obtener la cantidad total de Grasas
     cantidadTotalGrasas(): number{
         //Incluir código
         return 0;
