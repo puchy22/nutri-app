@@ -3,7 +3,7 @@
 
 Como gestores de dependencias tenemos varias opciones como *npm*, *yarn* o *pnmp*,
 que son estándares que bun como runtime soporta aunque para este proyecto considero que
-lo más interesante es usar elque viene integrado en Bun. Ya que así aprovechamos las claras
+lo más interesante es usar el que viene integrado en Bun. Ya que así aprovechamos las claras
 mejoras en velocidad que este gestor de dependencias tiene frente a los demás.
 
 En comparación frente al muy usado *npm*, usado principalmente en proyectos con *Node*
