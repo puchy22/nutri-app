@@ -11,7 +11,7 @@ mi vida para mantenerme saludable.
 Entidad encargada de gestionar las lista de la compra, el calculo de sus macronutrientes y la
 fecha cuando fue comprada.
 
-Para comprobar la sintaxis de esta entidad se debe ejecutar el script `check` con `deno run check`.
+Para comprobar la sintaxis de esta entidad se debe ejecutar el script `check` con `bun run check`.
 
 # Estructura y planificación del proyecto
 
