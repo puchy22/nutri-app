@@ -17,27 +17,32 @@ que tiene a la hora de usarse con TypeScript es que no tiene soporte nativo.
 
 Gulp es una opción que en un inicio se creó para usarse en un entorno JavaScript
 para automatizar tareas y agilizar el flujo de trabajo que además soporta TypeScript
-de manera nativa. La principal desventaja que presenta este en el proyecto es que con
-Bun debería ser instalado como una dependencia más y necesita de conocer un poco su
-sintaxis de código para poder crear estas tareas automáticas.
+de manera nativa. La principal desventaja que presenta esta es que comenzó a desarrollarse
+hace bastante tiempo y el desarrollo a día de hoy es muy descontinuado y para proyectos
+TypeScript se hace muy dependiente de plugins desarrollados por la comunidad, por lo
+que para un proyecto recién empezado como este creo que sería una herramienta que aumentaría
+demasiado la deuda técnica en un medio/largo plazo.
 
 ## Bun run scripts
 
-Bun run que es un comando integrado de Bun además de poder usarse para ejecutar archivos
-TypeScript también puede usarse para la tarea de automatizar tareas con la opción
-de ejecutar scripts definidos en `package.json`. La prinicipal ventaja de definir tareas
-de esta manera es que estas se ejecutan basandose en *JavaScriptCore* por lo que el rendimiento
-de la ejecución de estas tareas es muy rápido en comparación a otras opciones como `deno task`
-que se basa en *V8*.
-
-La principal desventaja que tiene usar este frente a `deno task` es que la comprobación de sintaxis
-se tiene que realizar de manera estática hay que usar la herramienta `tsc` ya que Bun no hace comprobación
-de tipos al ejecutar una tarea que pueda ser un `.ts`.
+Bun run que es un comando integrado de Bun que además de poder usarse para ejecutar archivos
+TypeScript también puede usarse automatizar tareas con la opción de ejecutar scripts definidos
+en `package.json`. La prinicipal ventaja de definir tareas de esta manera es que estas se
+ejecutan basandose en *JavaScriptCore* por lo que el rendimiento de la ejecución de estas tareas
+es muy rápido en comparación a otras opciones como `deno task` que se basa en *V8*. Además de
+ser esta herramienta el estándar a seguir en proyectos de Bun ya que se encuentra integrada
+en el propio runtime y es lo que busca este proyecto, ser una herramienta todo en uno.
 
 ## Decisión final
 
-Al final he decidico usar `bun run <script>` ya que al estar directamente integrado
-aprovecha muy bien la velocidad de ejecución que tiene bun por usar *JavaScriptCore*. Además que
-esto le aporta más empaque al proyecto y reduce el número de dependencias con herramientas externas
-como podrían ser `make` o `gulp`, lo que podría a la larga aumentar la deuda técnica.
+Al final he decidico usar `bun run <script>` ya que al estar directamente integrado en el runtime
+le aporta más coherencia a este ecosistema de Bun, siguiendo su estándar; y al medio plazo nos 
+ahorraríamos mucha deuda que nos podría causar un proyecto como `gulp`. Además de esto objetivamente
+en cuanto a rendimiento respecta da muy buenos rendimientos a la hora de ejecutar tareas realcionadas 
+con TypeScript, cosa que un proyecto como `make` objetivamente sería peor en ese sentido, por no estar 
+diseñada explicitamente para ello.
+
+En conclusión, he seleccionado bun porque sigue el estándar de los proyectos con este runtime, tiene 
+un rendimiento objetivamente superior al resto y facilita el mantenimiento a medio/largo plazo lo
+que reduce la deuda técnica del proyecto para un futuro.
 
