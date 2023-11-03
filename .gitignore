@@ -131,3 +131,4 @@ dist
 
 #Ignorar los archivos generados por TypeScript
 *.js
+
