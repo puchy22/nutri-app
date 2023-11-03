@@ -3,8 +3,12 @@
 
 Una parte importante del proyecto es definir tareas a ejecutar automaticamente
 esto nos ahorrará mucho tiempo en el desarrollo del proyecto para no tener que
-realizar constantemente tareas repetitivas. Para esto contamos con las siguientes
-opciones:
+realizar constantemente tareas repetitivas. Para esto seguiremos los siguientes
+criterios de elección:
+
+- Seguir el estándar de un proyecto para el runtime de Bun.
+- Tener un buen rendimiento en ejecución en las tareas.
+- Facilitar el mantenimiento de la automatización de tareas.
 
 ## Make
 
@@ -35,10 +39,9 @@ en el propio runtime y es lo que busca este proyecto, ser una herramienta todo e
 
 ## Decisión final
 
-Al final he decidico usar `bun run <script>` ya que al estar directamente integrado en el runtime
-le aporta más coherencia a este ecosistema de Bun, siguiendo su estándar; y al medio plazo nos 
+Al final he decidico usar `bun run <script>` el cual sigue su estándar; y al medio plazo nos 
 ahorraríamos mucha deuda que nos podría causar un proyecto como `gulp`. Además de esto objetivamente
-en cuanto a rendimiento respecta da muy buenos rendimientos a la hora de ejecutar tareas realcionadas 
+en cuanto a rendimiento respecta `bun run` da muy buenos rendimientos a la hora de ejecutar tareas realcionadas 
 con TypeScript, cosa que un proyecto como `make` objetivamente sería peor en ese sentido, por no estar 
 diseñada explicitamente para ello.
 
