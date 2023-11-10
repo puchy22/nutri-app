@@ -3,7 +3,8 @@
   "module": "src/compra.ts",
   "type": "module",
   "scripts": {
-    "check": "bun run tsc --noEmit ./src/compra.ts"
+    "check": "bun run tsc --noEmit ./src/compra.ts",
+    "test": "bun test"
   },
   "devDependencies": {
     "bun-types": "latest"

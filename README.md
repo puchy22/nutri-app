@@ -11,7 +11,7 @@ mi vida para mantenerme saludable.
 Entidad encargada de gestionar las lista de la compra, en este se extrae la información de los
 tickets, es decir, los diferentes productos y la cantidad que se compra de cada producto.
 
-Para probar el funcionamiento de la clase se hace con el comando `bun test`.
+Para probar el funcionamiento de la clase se hace con el comando `bun run test`.
 
 Para comprobar la sintaxis de esta entidad se debe ejecutar el script `check` con `bun run check`.
 
