@@ -3,3 +3,4 @@ entidad: src/compra.ts
 automatizar:
   fichero: package.json
   orden: bun run
+test: test/extraccion.test.ts
