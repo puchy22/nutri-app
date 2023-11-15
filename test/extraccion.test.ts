@@ -7,7 +7,7 @@ describe("Extracción de productos de la compra", () => {
   const casosDePrueba = [
     {
       name: "Compra simple con un producto",
-      ticketPath: "data/20230925_Mercadona_1,30.txt",
+      ticketPath: "data/20230925_mercadona_1_30.txt",
       productosEsperados: [
         {
           nombre: "EMPA, ATÚN 16%",
@@ -17,7 +17,7 @@ describe("Extracción de productos de la compra", () => {
     },
     {
       name: "Compra simple con dos productos, uno de ellos repetido",
-      ticketPath: "data/20230914_Mercadona_3,10.txt",
+      ticketPath: "data/20230914_mercadona_3_10.txt",
       productosEsperados: [
         {
           nombre: "ZUMO NARANJA REFRIG",
@@ -31,7 +31,7 @@ describe("Extracción de productos de la compra", () => {
     },
     {
       name: "Compra simple con tres productos, uno de ellos repetido",
-      ticketPath: "data/20230915_Mercadona_5,55.txt",
+      ticketPath: "data/20230915_mercadona_5_55.txt",
       productosEsperados: [
         {
           nombre: "NACHOS",
