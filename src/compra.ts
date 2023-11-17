@@ -1,5 +1,6 @@
 import { Producto } from "./producto";
 import { Ticket } from "./ticket";
+import * as fs from "fs";
 
 export class Compra{
    private fechaCompra: Date;
@@ -49,13 +50,30 @@ export class Compra{
 
       if (expresionCantidadProductos && expresionProductos){
          const cantidadProductos: number[] = expresionCantidadProductos[0].split("\n").map(cantidad => parseInt(cantidad));
-         const productos: Producto[] = expresionProductos[0].split("\n").map(producto => new Producto(producto, 0, 0, 0));
+
+         const productos: Producto[] = expresionProductos[0].split("\n").map(producto => {
+            const macroNutrientes: [number,number,number] = this.extraerMacroNutrientesTotalesProducto(producto);
+            return new Producto(producto, macroNutrientes[0], macroNutrientes[1], macroNutrientes[2]);
+         } );
 
          return productos.map((producto, indice) => [producto, cantidadProductos[indice]]);
       }
       else{
          return [];
       }
-
    }
+
+   private extraerMacroNutrientesTotalesProducto(nombreProducto: string): [number,number,number]{
+      const productos: Producto[] = JSON.parse(fs.readFileSync("data/productos_mercadona.json", "utf-8"));
+
+      const producto: Producto|undefined = productos.find(producto => producto.nombre === nombreProducto);
+
+      if (producto){
+         return [producto.grasas, producto.carbohidratos, producto.proteinas];
+      }
+      else{
+         return [0,0,0];
+      }
+   }
+
 }
