@@ -43,25 +43,19 @@ export class Compra{
 
    private extraerProductosDeTicket(informacionTicket: string): [Producto,number][] {
          
-      const lineas: string[] = informacionTicket.split("\n");
+      const expresionCantidadProductos: RegExpMatchArray|null = informacionTicket.match(/(?<=FACTURA SIMPLIFICADA:[^\n]*\n\n)([\s\S]*?)(?=\n\nDescripción)/g);
 
-      const indiceFactura: number = lineas.findIndex(linea => linea.includes("FACTURA SIMPLIFICADA"));
+      const expresionProductos: RegExpMatchArray|null = informacionTicket.match(/(?<=Descripción\s*\n)[\s\S]*?(?=\r?\n\s*\r?\n|\r?\n\s*$)/);
 
-      const indiceDescripcion: number = lineas.findIndex(linea => linea.includes("Descripción"));
+      if (expresionCantidadProductos && expresionProductos){
+         const cantidadProductos: number[] = expresionCantidadProductos[0].split("\n").map(cantidad => parseInt(cantidad));
+         const productos: Producto[] = expresionProductos[0].split("\n").map(producto => new Producto(producto, 0, 0, 0));
 
-      let productos: [Producto,number][] = [];
-
-      for (let indiceNombreProducto = indiceDescripcion + 1, indiceCantidadProducto = indiceFactura + 2;
-      indiceNombreProducto < lineas.length && lineas[indiceNombreProducto] != "";
-      indiceNombreProducto++, indiceCantidadProducto++){
-
-         const nombreProducto: string = lineas[indiceNombreProducto];
-
-         const cantidad: number = parseInt(lineas[indiceCantidadProducto]);
-
-         productos.push([new Producto(nombreProducto, 0, 0, 0), cantidad]);
+         return productos.map((producto, indice) => [producto, cantidadProductos[indice]]);
+      }
+      else{
+         return [];
       }
 
-      return productos;
    }
 }
