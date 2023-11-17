@@ -1,0 +1,157 @@
+[
+    {
+        "nombre": "+PROT NATILLA VAINI",
+        "cantidad": 480,
+        "grasas": 1.5,
+        "carbohidratos": 5.8,
+        "proteinas": 10
+    },
+    {
+        "nombre": "ZUMO NARANJA REFRIG",
+        "cantidad": 1000,
+        "grasas": 0.1,
+        "carbohidratos": 9.9,
+        "proteinas": 0.7
+    },
+    {
+        "nombre": "NAPOLITANA MIXTA",
+        "cantidad": 130,
+        "grasas": 21,
+        "carbohidratos": 34,
+        "proteinas": 9.3
+    },
+    {
+        "nombre": "NACHOS",
+        "cantidad": 150,
+        "grasas": 22,
+        "carbohidratos": 73,
+        "proteinas": 10
+    },
+    {
+        "nombre": "PRINGLES ONION",
+        "cantidad": 200,
+        "grasas": 32,
+        "carbohidratos": 56,
+        "proteinas": 4.6
+    },
+    {
+        "nombre": "SALSA DE QUESO",
+        "cantidad": 300,
+        "grasas": 3.5,
+        "carbohidratos": 11.2,
+        "proteinas": 4.3
+    },
+    {
+        "nombre": "COCA-COLA ZERO",
+        "cantidad": 1000,
+        "grasas": 0,
+        "carbohidratos": 0,
+        "proteinas": 0
+    },
+    {
+        "nombre": "ISOTÓNICO LIMÓN",
+        "cantidad": 1500,
+        "grasas": 0,
+        "carbohidratos": 4.4,
+        "proteinas": 0
+    },
+    {
+        "nombre": "MAYONESA",
+        "cantidad": 460,
+        "grasas": 65,
+        "carbohidratos": 9.7,
+        "proteinas": 1.33
+    },
+    {
+        "nombre": "PATATAS GAJO",
+        "cantidad": 750,
+        "grasas": 6.1,
+        "carbohidratos": 20,
+        "proteinas": 2.5
+    },
+    {
+        "nombre": "NATA PARA COCINAR",
+        "cantidad": 600,
+        "grasas": 15,
+        "carbohidratos": 5,
+        "proteinas": 2
+    },
+    {
+        "nombre": "PATATAS CAMPESTRES",
+        "cantidad": 33,
+        "grasas": 51,
+        "carbohidratos": 6.8,
+        "proteinas": null
+    },
+    {
+        "nombre": "FOCACCIA PACK-2",
+        "cantidad": 300,
+        "grasas": 11.2,
+        "carbohidratos": 39.1,
+        "proteinas": 7.9
+    },
+    {
+        "nombre": "CAPRICHOS JAMÓN",
+        "cantidad": 350,
+        "grasas": 8.3,
+        "carbohidratos": 16,
+        "proteinas": 11
+    },
+    {
+        "nombre": "PASTA RELLENA CABRA Y CEBOLLA",
+        "cantidad": 250,
+        "grasas": 11,
+        "carbohidratos": 35,
+        "proteinas": 2.7
+    },
+    {
+        "nombre": "RAVIOLI REQ.ESPINACA",
+        "cantidad": 250,
+        "grasas": 11,
+        "carbohidratos": 35,
+        "proteinas": 2.7
+    },
+    {
+        "nombre": "BIZCOCHO DE YOGUR",
+        "cantidad": 800,
+        "grasas": 19,
+        "carbohidratos": 49,
+        "proteinas": 6.3
+    },
+    {
+        "nombre": "COOKIES CHOCOLATE",
+        "cantidad": 250,
+        "grasas": 16,
+        "carbohidratos": 64,
+        "proteinas": 6.8
+    },
+    {
+        "nombre": "C. POLLO 100% NAT",
+        "cantidad": 1000,
+        "grasas": 0.3,
+        "carbohidratos": 0.1,
+        "proteinas": 0.3
+    },
+    {
+        "nombre": "CAFÉ LECHE CAPPUCCIN",
+        "cantidad": 250,
+        "grasas": 1.3,
+        "carbohidratos": 9.7,
+        "proteinas": 3.2
+    },
+    {
+        "nombre": "PASTEL CREMA 65%",
+        "cantidad": 50,
+        "grasas": 10.9,
+        "carbohidratos": 39.1,
+        "proteinas": 4.6
+    },
+    {
+        "nombre": "TORTILLA PAT C/CEB",
+        "cantidad": 600,
+        "grasas": 11,
+        "carbohidratos": 17,
+        "proteinas": 5.7
+    }
+]
+
