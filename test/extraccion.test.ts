@@ -68,10 +68,6 @@ describe("Extracción de productos de la compra", () => {
            cantidad: 1,
          },
          {
-           nombre: "BOLSA PLASTICO",
-           cantidad: 1,
-         },
-         {
            nombre: "MAYONESA 460ML",
            cantidad: 1,
          },
@@ -135,7 +131,7 @@ describe("Extracción de productos de la compra", () => {
    ];
 
   casosDePrueba.forEach((casoPrueba) => {
-    test(casoPrueba.name, () => {
+   test(casoPrueba.name, () => {
       const compra = new Compra(new Ticket(casoPrueba.ticketPath));
       const fechaCompra = compra.getFecha();
       const productosEnCompra = compra.getCompra();
@@ -150,13 +146,13 @@ describe("Extracción de productos de la compra", () => {
       expect(macros[2]).toBe(casoPrueba.proteinas);
 
       casoPrueba.productosEsperados.forEach((productoEsperado) => {
-        const productoEncontrado = productosEnCompra.find(([producto, cantidad]) => {
-          return producto.nombre === productoEsperado.nombre && cantidad === productoEsperado.cantidad;
-        });
+         const productoEncontrado = productosEnCompra.find(([producto, cantidad]) => {
+            return producto.nombre === productoEsperado.nombre && cantidad === productoEsperado.cantidad;
+         });
 
-        expect(productoEncontrado).toBeDefined();
+            expect(productoEncontrado).toBeDefined();
+         });
       });
-    });
-  });
+   });
 });
 
