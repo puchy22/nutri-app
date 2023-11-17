@@ -21,6 +21,20 @@ export class Compra{
 
    }
 
+   getTotalMacroNutrientes(): [number,number,number]{
+      let macroNutrientesTotales: [number,number,number] = [0,0,0];
+
+      this.compra.forEach(([producto, cantidad]) => {
+         macroNutrientesTotales[0] += producto.getGrasas() * cantidad;
+         macroNutrientesTotales[1] += producto.getCarbohidratos() * cantidad;
+         macroNutrientesTotales[2] += producto.getProteinas() * cantidad;
+      });
+
+      macroNutrientesTotales = macroNutrientesTotales.map(macroNutriente => Math.round(macroNutriente * 100) / 100) as [number,number,number];
+
+      return macroNutrientesTotales;
+   }
+
    getCompra(): [Producto,number][]{
       return this.compra;
    }
@@ -64,12 +78,12 @@ export class Compra{
    }
 
    private extraerMacroNutrientesTotalesProducto(nombreProducto: string): [number,number,number]{
-      const productos: Producto[] = JSON.parse(fs.readFileSync("data/productos_mercadona.json", "utf-8"));
+      const productos = JSON.parse(fs.readFileSync("data/productos_mercadona.json", "utf-8"));
 
-      const producto: Producto|undefined = productos.find(producto => producto.nombre === nombreProducto);
+      const producto = productos.find(producto => producto.nombre === nombreProducto);
 
       if (producto){
-         return [producto.grasas, producto.carbohidratos, producto.proteinas];
+         return [(producto.grasas/100)*producto.cantidad, (producto.carbohidratos/100)*producto.cantidad, (producto.proteinas/100)*producto.cantidad];
       }
       else{
          return [0,0,0];
