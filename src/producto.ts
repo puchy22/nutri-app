@@ -1,14 +1,14 @@
 export class Producto{
     readonly nombre: string;
+    readonly grasas: number;
     readonly carbohidratos: number;
     readonly proteinas: number;
-    readonly grasas: number;
 
-    constructor(nombre: string, carbohidratos: number, proteinas:number, grasas: number){
+    constructor(nombre: string, grasas: number, carbohidratos: number, proteinas:number){
         this.nombre = nombre;
+        this.grasas = grasas;
         this.carbohidratos = carbohidratos;
         this.proteinas = proteinas;
-        this.grasas = grasas;
     }
 
     getCarbohidratos(): number{
