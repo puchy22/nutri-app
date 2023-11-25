@@ -3,16 +3,14 @@
 
 ## Criterios
 
-- **Versión actualizada y en mantenimiento**: la imagen debe estar actualizada
-  y en mantenimiento. Ya que si no está actualizada, puede contener fallos de
-  seguridad, y si no está en mantenimiento, puede que no se actualice en el
-  futuro.
-- **Sin software innecesario**: La imagen no debe contener ningún software
-  innecesario. Ya que para ejecutar nuestros test no necesitamos un entorno
-  completo, sino sólo lo necesario para ejecutar los test.
-- **Bajo consumo de recursos**: La imagen debe consumir la menor cantidad de
-  recursos posible. Ya que se trata de un entorno de pruebas, no queremos que
-  consuma recursos que podrían ser utilizados por otros contenedores.
+- **Versión actualizada**: la imagen debe estar actualizada. Ya que si no está
+    actualizada, puede contener fallos de seguridad o no tener las últimas
+    versiones de los paquetes instalados.
+- **Ejecución rápida**: la imagen debe ser rápida a la hora de ejecutarse,
+    para que los tests se ejecuten lo más rápido posible y aprovechar al máximo
+    una de las principales características de Bun.
+- **Mantenimiento activo**: la imagen debe tener un mantenimiento activo, para
+  que se actualice con frecuencia y se corrijan los fallos que puedan surgir.
 
 ## Opciones
 
@@ -30,7 +28,8 @@ Podemos considerar dos tipos de imagenes a usar como base:
   que puede consumir recursos de más.
 
 **NOTA**: en el caso de las imagenes de tercero con Bun, no han sido tenidas en
-cuenta por haber muy pocas opciones, y no ser muy populares.
+cuenta por haber muy pocas opciones, no ser muy populares y con un mantenimiento
+dudoso al tratarse Bun de un proyecto muy nuevo.
 
 ### Imagen de una distribución de Linux
 
@@ -66,20 +65,28 @@ al inicio de este documento, hay que tener en cuenta que existen distintos sabor
 de la imagen, cada uno con un conjunto de software instalado. Por lo que hay que
 elegir el sabor que más se ajuste a nuestras necesidades. Estas son
 
-- `debian`
-- `slim`
-- `alpine`
-- `distroless`
+- `[debian](https://github.com/oven-sh/bun/blob/main/dockerhub/debian/Dockerfile)`: usa como base
+    la imagen Debian bullseye, que es la versión anterior a la actual versión de Debian.
+    Esta hace de ella una versión estable, pero el mayor problema de esta imagen es que es
+    más pesada que imagenes como alpine o versiones slim de otras distribuciones.
+- `[alpine](https://github.com/oven-sh/bun/blob/main/dockerhub/alpine/Dockerfile)`: usa como base
+    la imagen Alpine 3.18, que es la versión actual versión de Alpine. Esta hace de ella una versión
+    estable, pero el mayor problema de esta imagen es que como se puede ver en la fuente de la imagen,
+    usa una solución temporal para la biblioteca glibc; por lo que no parece una buena opción por el
+    momento.
+- `[slim](https://github.com/oven-sh/bun/blob/main/dockerhub/debian-slim/Dockerfile)`: usa como base
+    la imagen Debian bullseye-slim, que es la versión anterior a la actual versión de Debian.
+    Esta hace de ella una versión estable y ligera.
 
 # Elección
 
-Para la elección final lo primero que he descargado es la imagen oficial de Bun y de terceros
-ya que esta no es muy popular y no hay muchas opciones, y he descartado porque la instalción
-de Bun es muy simple y se puede hacer en cualquier imagen de Linux, sin dificultad.
+Para la elección final lo primero que he descartado las imágenes de terceros porque hay muy pocas
+opciones, no son muy populares y tienen un mantenimiento dudoso.
 
-Una vez descartada la imagen oficial de Bun, he estado sopensando entre Alpine y openSUSE micro, ya
-que ambas son muy ligeras y con un consumo de recursos muy bajo. Finalmente me he decantado por
-Alpine porque en terminos de lo ligera que es, es la mejor opción. Además de contar con un conjunto
-muy mínimo de software, un consumo de recursos muy bajo y una gran popularidad, que le aporta un
-mantenimiento muy activo y últimas actualizaciones.
+Una vez descartadas las imagenes de terceros entre la imagen oficial de Bun, he estado sopensando
+entre Alpine o openSUSE, ya que ambas son muy ligeras, con un consumo de recursos muy bajo y un mantenimiento
+continuo. Aunque al final me he decantado por usar la imagen oficial de Bun, ya que es la que más se
+ajusta a mis necesidades, y está muy bien optimizada para la ejecución del mismo. Además el mantenimiento
+y las actualizaciones con mejoras de rendimiento están aseguradas, ya que mientras que Bun siga en desarrollo
+la imagen oficial de Bun también lo hará, siguiendo las mismas directrices de desarrollo.
 
