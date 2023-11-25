@@ -3,13 +3,13 @@
 
 ## Criterios
 
-- **Ligera**: La imagen debe ser lo más ligera posible, para que el tiempo de
-  construcción de los contenedores sea lo más corto posible. Ya que se trata
-  de un entorno de pruebas, la velocidad de construcción es una prioridad.
+- **Versión actualizada y en mantenimiento**: la imagen debe estar actualizada
+  y en mantenimiento. Ya que si no está actualizada, puede contener fallos de
+  seguridad, y si no está en mantenimiento, puede que no se actualice en el
+  futuro.
 - **Sin software innecesario**: La imagen no debe contener ningún software
   innecesario. Ya que para ejecutar nuestros test no necesitamos un entorno
-  completo, sino sólo lo necesario para ejecutar los test. Además, esto
-  agilita la construcción de los contenedores.
+  completo, sino sólo lo necesario para ejecutar los test.
 - **Bajo consumo de recursos**: La imagen debe consumir la menor cantidad de
   recursos posible. Ya que se trata de un entorno de pruebas, no queremos que
   consuma recursos que podrían ser utilizados por otros contenedores.
@@ -22,8 +22,7 @@ Podemos considerar dos tipos de imagenes a usar como base:
   distribución de Linux, como por ejemplo Alpine, Debian, SUSE, Rocky etc. Estas
   imágenes son muy versátiles, y nos permiten instalar cualquier software que
   necesitemos. La desventaje es que tendremos que instalar todo el software
-  necesario para ejecutar nuestros test, lo que puede ser un proceso lento
-  al momento de construir los contenedores.
+  necesario para ejecutar nuestros test.
 - **Imágen oficial de Bun**: Esta imagen ya tiene instalado todo el software
   necesario para ejecutar nuestros test, por lo que no tenemos que instalar
   nada. La desventaja es que perdemos el control de instalación de software,
@@ -81,6 +80,6 @@ de Bun es muy simple y se puede hacer en cualquier imagen de Linux, sin dificult
 Una vez descartada la imagen oficial de Bun, he estado sopensando entre Alpine y openSUSE micro, ya
 que ambas son muy ligeras y con un consumo de recursos muy bajo. Finalmente me he decantado por
 Alpine porque en terminos de lo ligera que es, es la mejor opción. Además de contar con un conjunto
-de software mínimo y un consumo de recursos muy bajo.
-
+muy mínimo de software, un consumo de recursos muy bajo y una gran popularidad, que le aporta un
+mantenimiento muy activo y últimas actualizaciones.
 
