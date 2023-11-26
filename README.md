@@ -20,37 +20,37 @@ Para comprobar la sintaxis de esta entidad se debe ejecutar el script `check` co
 Para construir el contenedor de manera local se pueden usar los siguientes comandos:
 
 ```bash
-podman build -t nutri-app:latest .
+podman build -t puchy22/nutri-app:latest .
 ```
 
 o bien
 
 ```bash
-docker build -t nutri-app:latest .
+docker build -t puchy22/nutri-app:latest .
 ```
 
 Para ejecutar el contenedor se puede usar el siguiente comando:
 
 ```bash
-podman run -it --rm nutri-app:latest
+podman run -t -v `pwd`:/home/bun/app/ puchy22/nutri-app
 ```
 
 o bien
 
 ```bash
-docker run -it --rm nutri-app:latest
+docker run -t -v `pwd`:/home/bun/app/ puchy22/nutri-app
 ```
 
-O usar la imagen que se encuentra en el registro de docker:
+O usar la imagen que se encuentra en Docker Hub, si no se ha construido de manera local, con el siguiente comando:
 
 ```bash
-podman run -it --rm docker.io/puchy22/nutri-app:latest
+podman run -t -v `pwd`:/home/bun/app/ docker.io/puchy22/nutri-app
 ```
 
 o bien
 
 ```bash
-docker run -it --rm docker.io/puchy22/nutri-app:latest
+docker run -t -v `pwd`:/home/bun/app/ docker.io/puchy22/nutri-app
 ```
 
 
