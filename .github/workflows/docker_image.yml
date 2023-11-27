@@ -3,8 +3,6 @@ name: Publicación imagen Docker
 
 on:
   push:
-    branches:
-      - 'main'
     paths:
       - 'Containerfile'
       - 'bun.lockb'
@@ -26,7 +24,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: ./bun.lockb ./package.json
           file: ./Containerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/nutri-app:latest
