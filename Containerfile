@@ -2,7 +2,7 @@ FROM oven/bun:slim
 
 LABEL maintaner="rubendltv@correo.ugr.es"
 
-WORKDIR /home/bun/app
+WORKDIR /app/test
 
 COPY --chown=bun:bun package.json bun.lockb .
 
