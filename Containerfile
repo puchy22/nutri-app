@@ -1,6 +1,7 @@
 FROM oven/bun:slim
 
-LABEL maintaner="rubendltv@correo.ugr.es"
+LABEL version="0.0.5" \
+      maintaner="rubendltv@correo.ugr.es"
 
 WORKDIR /app/test
 
