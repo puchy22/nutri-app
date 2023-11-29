@@ -90,3 +90,23 @@ ajusta a mis necesidades, y está muy bien optimizada para la ejecución del mis
 y las actualizaciones con mejoras de rendimiento están aseguradas, ya que mientras que Bun siga en desarrollo
 la imagen oficial de Bun también lo hará, siguiendo las mismas directrices de desarrollo.
 
+Para elegir entre las distintas opciones que nos da la imagen oficicial me he basado principalmente en
+la velocidad de ejecución de los tests. Para esto he creado un script que ejecuta el contenedor 10
+veces seguidas y calcula el tiempo medio de ejecución. De esta prueba he obtenido que la mejor opción es
+la slim de Debian, además que esta cumple con el resto de criterios; por lo que la imagen oficial de Bun
+versión slim es mi elección final.
+
+## Pruebas
+
+### Debian
+
+[!./images/vel_test_debian.png]
+
+### Alpine
+
+[!./images/vel_test_alpine.png]
+
+### Slim
+
+[!./images/vel_test_slim.png]
+
