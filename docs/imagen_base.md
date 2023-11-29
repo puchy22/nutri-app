@@ -100,13 +100,13 @@ versión slim es mi elección final.
 
 ### Debian
 
-[!./images/vel_test_debian.png]
+![Ejecución de test de velocidad de la imagen Debian](./images/vel_test_debian.png)
 
 ### Alpine
 
-[!./images/vel_test_alpine.png]
+![Ejecución de test de velocidad  de la imagen Alpine](./images/vel_test_alpine.png)
 
 ### Slim
 
-[!./images/vel_test_slim.png]
+![Ejecución de test de velocidad  de la imagen Slim](./images/vel_test_slim.png)
 
