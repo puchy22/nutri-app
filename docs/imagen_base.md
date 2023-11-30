@@ -40,8 +40,7 @@ dudoso al tratarse Bun de un proyecto muy nuevo.
   lo que la hace una muy buena opción.
 - **[Debian](https://hub.docker.com/_/debian)**: Es una distribución de Linux muy popular, y con un consumo de
   recursos bajo. Es una buena opción para usar como base de nuestros
-  contenedores de pruebas. La desventaja es que no es tan ligera como Alpine,
-  por lo que el tiempo de construcción de los contenedores será mayor.
+  contenedores de pruebas. La desventaja es que no es tan ligera como Alpine.
 - **[SUSE](https://registry.suse.com/)**: Es una distribución de Linux muy popular en el mundo de los servidores,
   y con un consumo de recursos bajo. Es una buena opción para usar como base 
   de nuestros contenedores de pruebas. La desventaja es que no es ni tan ligera 
