@@ -1,4 +1,9 @@
+
 name: Bun Canary Test
+
+on:
+  push:
+
 jobs:
   my-job:
     name: Ejecutar los tests
