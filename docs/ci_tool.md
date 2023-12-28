@@ -36,3 +36,20 @@ GitLab ofrece un servicio de CI/CD gratuito de código abierto que se puede inte
 Este te permite integrar workflows de CI/CD en el repositorio de GitHub, con amplia variedad
 de compatibilidad, como Docker, TypeScript y Bun.
 
+## [Drone CI](https://www.drone.io/)
+
+Drone CI es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este servicio
+permite probar test unitarios de manera sencilla y dentro de un contenedor de Docker. El
+problema es que ya no admite nuevos registros, y hay que ejecutarlo en un servidor propio.
+
+## [Codeship](https://www.cloudbees.com/products/codeship)
+
+Codeship es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este servicio
+permite probar y construir el proyecto dentro de un contenedor de Docker. Además permite
+la integración con GitHub con un simple token.
+
+# Versiones del lenguaje probadas
+
+Se ha probado la versión canary de Bun, con la GitHub Actionsn y la versión del contenedor
+de Docker con
+
