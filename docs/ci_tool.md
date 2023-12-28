@@ -42,14 +42,23 @@ Drone CI es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este
 permite probar test unitarios de manera sencilla y dentro de un contenedor de Docker. El
 problema es que ya no admite nuevos registros, y hay que ejecutarlo en un servidor propio.
 
-## [Codeship](https://www.cloudbees.com/products/codeship)
+## [Travis CI](https://www.travis-ci.com/)
 
-Codeship es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este servicio
-permite probar y construir el proyecto dentro de un contenedor de Docker. Además permite
-la integración con GitHub con un simple token.
+TravisCI es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este servicio
+permite probar test unitarios de manera sencilla y dentro de un contenedor de Docker.
 
 # Versiones del lenguaje probadas
 
 Se ha probado la versión canary de Bun, con la GitHub Actionsn y la versión del contenedor
 de Docker con
+
+# Selección
+
+Se ha seleccionado GitHub Actions por ser la herramienta por defecto de GitHub y además
+Travis CI por ser una herramienta muy sencilla de usar y que se integra muy bien con
+GitHub.
+
+Además de estas dos herramientas, se ha probado con GitLab CI y CodeShip, pero estas no terminaron
+de funcionar correctamente. Por lo que consideré que la integración con GitHub no era suficiente
+en comparación con las otras dos herramientas.
 
