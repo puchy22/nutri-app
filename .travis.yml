@@ -1,0 +1,11 @@
+language:
+  - minimal
+
+services:
+  - docker
+
+install:
+  - docker pull docker.io/puchy22/nutri-app:latest
+
+script: 
+  - docker run -u 1001 -t -v $(pwd):/app/test puchy22/nutri-app:latest
