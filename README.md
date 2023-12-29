@@ -66,5 +66,6 @@ docker run -t -v `pwd`:/home/bun/app/ docker.io/puchy22/nutri-app
 - [Elección gestor de tareas](./docs/gestor_tareas.md)
 - [Elección herramienta de test](./docs/test_runner.md)
 - [Elección de la imagen base](./docs/imagen_base.md)
+- [Elección de herramienta de integración continua](./docs/ci_tool.md)
 
 
