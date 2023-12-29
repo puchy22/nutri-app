@@ -47,11 +47,6 @@ problema es que ya no admite nuevos registros, y hay que ejecutarlo en un servid
 TravisCI es un servicio de CI/CD gratuito que se puede integrar con GitHub. Este servicio
 permite probar test unitarios de manera sencilla y dentro de un contenedor de Docker.
 
-# Versiones del lenguaje probadas
-
-Se ha probado la versión canary de Bun, con la GitHub Actionsn y la versión del contenedor
-de Docker con
-
 # Selección
 
 Se ha seleccionado GitHub Actions por ser la herramienta por defecto de GitHub y además
@@ -62,3 +57,9 @@ Además de estas dos herramientas, se ha probado con GitLab CI y CodeShip, pero 
 de funcionar correctamente. Por lo que consideré que la integración con GitHub no era suficiente
 en comparación con las otras dos herramientas.
 
+# Versiones del lenguaje probadas
+
+Bun al ser tan moderno no tiene muchas versiones, por lo que se ha probado las dos que hay
+disponibles, la versión *latest* y *canary*.
+La versión canary se ha probado con GitHub Actionsn, mientras que la versión latest es probada
+con la imagen de Docker con *Travis CI*.
