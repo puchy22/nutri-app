@@ -60,6 +60,6 @@ en comparación con las otras dos herramientas.
 # Versiones del lenguaje probadas
 
 Bun al ser tan moderno no tiene muchas versiones, por lo que se ha probado las dos que hay
-disponibles, la versión *latest* y *canary*.
-La versión canary se ha probado con GitHub Actionsn, mientras que la versión latest es probada
+disponibles, la versión *latest*, *canary* y la versión 0.8.
+La versión canary y la 0.8 se ha probado con GitHub Actionsn, mientras que la versión latest es probada
 con la imagen de Docker con *Travis CI*.
