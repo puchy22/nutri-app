@@ -4,3 +4,6 @@ automatizar:
   fichero: package.json
   orden: bun run
 test: test/extraccion.test.ts
+CI:
+  - .github/workflows/bun_canary_test.yml
+  - .travis.yml

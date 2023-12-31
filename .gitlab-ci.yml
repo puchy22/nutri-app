@@ -1,0 +1,9 @@
+
+stages: 
+  - test
+
+test:
+  image: docker.io/puchy22/nutri-app:latest
+  stage: test
+  script:
+    - 'bun run test'
